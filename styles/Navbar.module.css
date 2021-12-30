@@ -1,3 +1,9 @@
+.navbar {
+  font-family: 'Rokkitt Regular', serif;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
 .instagram {
-    float: right;
+  float: right;
 }
