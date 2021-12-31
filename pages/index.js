@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Navbar from '/components/Navbar'
+import Footer from '/components/Footer'
 
 export default function Home() {
   return (
@@ -59,6 +60,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }
