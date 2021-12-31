@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import Footer from '/components/Footer'
 import Navbar from '/components/Navbar'
+import Footer from '/components/Footer'
 
 export default function Home() {
   return (
@@ -36,19 +36,25 @@ export default function Home() {
         <div className={styles.description}>
           <Image src="/photo.jpg" alt="photo of Hao Wen" width={494} height={509} />
           <h1 className={styles.title}>
-            I'm Hao Wen.
+            I&#39;m Hao Wen.
           </h1>
           THIRD YEAR ARCHITECTURE STUDENT
           <div className={styles.links}>
             <ul>
               <li>
-                <a href='/resume'>RESUME</a>
+                <Link href='/resume'>
+                  <a>RESUME</a>
+                </Link>
               </li>
               <li>
-                <a href='/portfolio'>PORTFOLIO</a>
+                <Link href='/portfolio'>
+                  <a>PORTFOLIO</a>
+                </Link>
               </li>
               <li>
-                <a href='/contact'>CONTACT</a>
+                <Link href='/contact'>
+                  <a>CONTACT</a>
+                </Link>
               </li>
             </ul>
           </div>
