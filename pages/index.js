@@ -36,7 +36,7 @@ export default function Home() {
         <div className={styles.description}>
           <Image src="/photo.jpg" alt="photo of Hao Wen" width={494} height={509} />
           <h1 className={styles.title}>
-            I'm Hao Wen.
+            I&#39;m Hao Wen.
           </h1>
           THIRD YEAR ARCHITECTURE STUDENT
           <div className={styles.links}>
