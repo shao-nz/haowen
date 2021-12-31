@@ -1,9 +1,13 @@
 .navbar {
+  height: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   font-family: 'Rokkitt Regular', serif;
-  padding-top: 10px;
-  font-size: 30px;
+  font-size: 3vh;
+  align-items: flex-end;
 }
 
 .instagram {
-  float: right;
+  grid-area: 1/2;
+  justify-self: flex-end;
 }
