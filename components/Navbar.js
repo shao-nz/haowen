@@ -9,11 +9,12 @@ export default function NavBar() {
                 <a>HW.</a>
             </Link>
             <Link
-                className={styles.instagram}
-                href='https://www.instagram.com/hao_portfolio/'
-                target="_blank"
-                rel="noopener noreferrer">
-                <a>
+                href='https://www.instagram.com/hao_portfolio/'>
+                <a
+                    className={styles.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <Image 
                         src='/instagram.png' 
                         alt='Instagram logo' 
