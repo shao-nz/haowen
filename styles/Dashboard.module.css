@@ -1,18 +1,28 @@
 .container {
-    padding: 0 2rem;
-    height: 100vh;
-  }
+  padding: 0 2rem;
+  height: 100vh;
+}
 
 .main {
-    height: 90vh;
-    padding: 2rem 0 2rem 1rem;
-    border: 1px solid black;
+  height: 90vh;
+  padding: 2rem 0 2rem 1rem;
+  border: 1px solid black;
+  font-family: 'Rokkitt Regular';
+}
+
+.main button {
+  font-family: 'Rokkitt Regular';
 }
 
 .main h1 {
-    font-family: 'Neutral Face Bold';
+  font-family: 'Neutral Face Bold';
 }
 
 .main h2 {
-    font-family: 'Neutral Face Bold';
+  font-family: 'Neutral Face Bold';
+}
+
+.removePictures ul {
+  list-style-type: none;
+  padding: 0;
 }
