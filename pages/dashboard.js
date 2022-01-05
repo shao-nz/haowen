@@ -76,7 +76,7 @@ export default function Dashboard() {
           <div className={styles.insertPictures}>
             <h2>Insert yo images</h2>
             <form action='upload_image.php' method='POST'>
-              <label for="picture">Select image:</label> <br />
+              <label htmlFor="picture">Select image:</label> <br />
               <input 
                 type="file"
                 id="picture" 
