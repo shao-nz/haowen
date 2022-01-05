@@ -11,13 +11,10 @@
 }
 
 .main button,
-.main input {
-  font-family: 'Rokkitt Regular';
-}
-
+.main input,
 .main h1,
 .main h2 {
-  font-family: 'Neutral Face Bold';
+  font-family: 'Rokkitt Regular';
 }
 
 .removePictures ul {
