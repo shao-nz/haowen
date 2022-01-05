@@ -3,7 +3,7 @@ import Picture from '../../lib/Picture';
 
 const basePath = '../../public/images/';
 
-export default async (req, res) => {
+export default handler = async (req, res) => {
   const {method} = req;
 
   await mongodb();
