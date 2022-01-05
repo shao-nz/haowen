@@ -10,14 +10,12 @@
   font-family: 'Rokkitt Regular';
 }
 
-.main button {
+.main button,
+.main input {
   font-family: 'Rokkitt Regular';
 }
 
-.main h1 {
-  font-family: 'Neutral Face Bold';
-}
-
+.main h1,
 .main h2 {
   font-family: 'Neutral Face Bold';
 }
