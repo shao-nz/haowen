@@ -25,7 +25,6 @@ export default function Dashboard() {
     const response = await fetch(url, params);
     const responseData = await response.json();
     setPictures(responseData.data);
-    // console.log(pictures);
   }
 
   async function DeletePicture(id) {
@@ -76,6 +75,17 @@ export default function Dashboard() {
           <h1>Dashboard - control yo shit in here</h1>
           <div className={styles.insertPictures}>
             <h2>Insert yo images</h2>
+            <form action='upload_image.php' method='POST'>
+              <label for="picture">Select image:</label> <br />
+              <input 
+                type="file"
+                id="picture" 
+                name="picture"
+                accept="image/*"
+              />
+              <button>Submit</button>
+            </form>
+
           </div>
           <div className={styles.removePictures}>
             <h2>Remove yo images</h2>
