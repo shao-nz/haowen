@@ -7,13 +7,30 @@ import React from 'react';
 export default function Dashboard() {
   const [pictures, setPictures] = React.useState([]);
 
-  async function PostPictures(fileName) {
-    const url='/api/pictures';
-    const data={
-  
-    };
-  }
-  
+  const uploadPicture = async (e) => {
+    e.preventDefault();
+    const file = e.target[0].files[0];
+    const filename = encodeURIComponent(file.name);
+    const res = await fetch(`/api/uploadPicture?file=${filename}`);
+    const { url, fields } = await res.json();
+    const formData = new FormData();
+
+    Object.entries({ ...fields, file }).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+
+    const upload = await fetch(url, {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (upload.ok) {
+      console.log('Uploaded successfully!');
+    } else {
+      console.error('Upload failed.');
+    }
+  };
+
   async function GetPictures() {
     const url='/api/pictures';
     const params={
@@ -75,17 +92,14 @@ export default function Dashboard() {
           <h1>Dashboard - control yo shit in here</h1>
           <div className={styles.insertPictures}>
             <h2>Insert yo images</h2>
-            <form action='upload_image.php' method='POST'>
-              <label htmlFor="picture">Select image:</label> <br />
-              <input 
-                type="file"
-                id="picture" 
-                name="picture"
-                accept="image/*"
-              />
-              <button>Submit</button>
+            <p>Upload a .png or .jpg image (max 20MB).</p>
+            <form id='pictureUpload' name='pictureUpload' onSubmit={(e) => uploadPicture(e)}>
+            <input
+              type="file"
+              accept="image/png, image/jpeg"
+            />
+            <input type='submit'></input>
             </form>
-
           </div>
           <div className={styles.removePictures}>
             <h2>Remove yo images</h2>
