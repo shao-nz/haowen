@@ -1,7 +1,8 @@
 import mongodb from '../../lib/mongodb';
 import Picture from '../../lib/Picture';
 
-const basePath = '../../public/images/';
+// const basePath = '../../public/images/';
+const basePath = 'https://s3.ap-southeast-2.amazonaws.com/hao.works/'
 
 const handler = async (req, res) => {
   const {method} = req;
