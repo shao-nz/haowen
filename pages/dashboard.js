@@ -7,11 +7,59 @@ import React from 'react';
 export default function Dashboard() {
   const [pictures, setPictures] = React.useState([]);
 
-  const uploadPicture = async (e) => {
+  const deletePicture = async(id) => {
+    const url='/api/pictures';
+    const data={
+      id: id
+    };
+    const params={
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data),
+      method:'DELETE'
+    };
+    const response = await fetch(url, params);
+    const responseData = await response.json();
+    console.log(responseData);
+    getPictures();
+  }
+
+  const getPictures = async() => {
+    const url='/api/pictures';
+    const params={
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      method:'GET'
+    };
+    const response = await fetch(url, params);
+    const responseData = await response.json();
+    setPictures(responseData.data);
+  }
+
+  const postPicture = async(fileName) => {
+    const url='/api/pictures';
+    const data={
+      fileName: fileName
+    };
+    const params={
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data),
+      method:'POST'
+    };
+    const response = await fetch(url, params);
+    const responseData = await response.json();
+    console.log(responseData);
+  }
+
+  const uploadPictureS3 = async(e) => {
     e.preventDefault();
     const file = e.target[0].files[0];
     const filename = encodeURIComponent(file.name);
-    const res = await fetch(`/api/uploadPicture?file=${filename}`);
+    const res = await fetch(`/api/uploadPictureS3?file=${filename}`);
     const { url, fields } = await res.json();
     const formData = new FormData();
 
@@ -29,38 +77,9 @@ export default function Dashboard() {
     } else {
       console.error('Upload failed.');
     }
+    postPicture(filename);
   };
 
-  async function GetPictures() {
-    const url='/api/pictures';
-    const params={
-      headers:{
-        'Content-Type': 'application/json'
-      },
-      method:'GET'
-    };
-    const response = await fetch(url, params);
-    const responseData = await response.json();
-    setPictures(responseData.data);
-  }
-
-  async function DeletePicture(id) {
-    const url='/api/pictures';
-    const data={
-      id: id
-    };
-    const params={
-      headers:{
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data),
-      method:'DELETE'
-    };
-    const response = await fetch(url, params);
-    const responseData = await response.json();
-    console.log(responseData);
-    GetPictures()
-  }
 
   return (
     <div className={styles.container}>
@@ -93,7 +112,7 @@ export default function Dashboard() {
           <div className={styles.insertPictures}>
             <h2>Insert yo images</h2>
             <p>Upload a .png or .jpg image (max 20MB).</p>
-            <form id='pictureUpload' name='pictureUpload' onSubmit={(e) => uploadPicture(e)}>
+            <form id='pictureUpload' name='pictureUpload' onSubmit={(e) => uploadPictureS3(e)}>
             <input
               type="file"
               accept="image/png, image/jpeg"
@@ -103,15 +122,15 @@ export default function Dashboard() {
           </div>
           <div className={styles.removePictures}>
             <h2>Remove yo images</h2>
-            <button onClick={GetPictures}>Display Images</button>
+            <button onClick={getPictures}>Display Images</button>
             <ul>
               <div className={styles.allPictures}>
                 {
                   pictures.map((picture) => {
                     return (
                         <div className={picture.fileName} key={picture._id}>
-                          <li id={picture._id}>{picture._id} {picture.fileName}
-                            <button onClick={() => DeletePicture(picture._id)}>Delete</button>
+                          <li id={picture._id}>{picture.fileName}
+                            <button onClick={() => deletePicture(picture._id)}>Delete</button>
                           </li>
                         </div>
                     )
