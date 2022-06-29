@@ -42,13 +42,13 @@ export default function Home() {
           <div className={styles.links}>
             <ul>
               <li>
-                <Link href='/resume'>
-                  <a>RESUME</a>
+                <Link href='/portfolio'>
+                  <a>PORTFOLIO</a>
                 </Link>
               </li>
               <li>
                 <Link href='/portfolio'>
-                  <a>PORTFOLIO</a>
+                  <a>INDIVIDUAL WORKS</a>
                 </Link>
               </li>
               <li>
