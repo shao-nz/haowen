@@ -37,10 +37,10 @@ export default function Resume() {
             <div className={styles.scrollbar}>
               <ul>
                 <li>RESUME</li>
-                <li>"PYRMONT BATHHOUSE"</li>
-                <li>"THE WEAVING"</li>
-                <li>"HAVEN"</li>
-                <li>"HOUSE OF CELEBRATIONS"</li>
+                <li>PYRMONT BATHHOUSE</li>
+                <li>THE WEAVING</li>
+                <li>HAVEN</li>
+                <li>HOUSE OF CELEBRATIONS</li>
               </ul>
             </div>
             <div className={styles.imagecontainer}>
