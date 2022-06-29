@@ -1,0 +1,47 @@
+.container {
+    padding: 0 2rem;
+    height: 100vh;
+}
+
+.main {
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.portfolio {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+}
+
+.scrollbar {
+    grid-area: 1/1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.scrollbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scrollbar li {
+    font-size: 1rem;
+}
+
+.imagecontainer {
+    grid-area: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.imagecontainer > img {
+    border: 1px black solid;
+    width: 100%;
+}
