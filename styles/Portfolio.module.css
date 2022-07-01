@@ -13,7 +13,7 @@
 }
 
 .portfolio {
-    width: 90%;
+    width: 85%;
     display: grid;
     grid-template-columns: 0.4fr 2fr;
 }
@@ -38,7 +38,7 @@
     grid-area: 1/2;
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 3vmax;
 }
 
 .imagecontainer > img {
