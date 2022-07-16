@@ -1,6 +1,8 @@
 .container {
     padding: 0 2rem;
     height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
 }
 
 .main {
@@ -41,7 +43,8 @@
     gap: 3vmax;
 }
 
-.slides > img {
+.slides .scroll_snap_center > img {
     border: 1px black solid;
     width: 100%;
+    scroll-snap-align: center;
 }
