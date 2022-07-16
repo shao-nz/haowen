@@ -49,5 +49,5 @@ a {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: purple; 
+    background: black; 
   }
