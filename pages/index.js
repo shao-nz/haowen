@@ -47,7 +47,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href='/portfolio'>
+                <Link href='/individual'>
                   <a>INDIVIDUAL WORKS</a>
                 </Link>
               </li>
