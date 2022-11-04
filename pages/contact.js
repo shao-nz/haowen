@@ -8,10 +8,11 @@ import { Loader } from '@googlemaps/js-api-loader'
 export default function Contact() {
   const googlemap = useRef(null);
   const wilkinsonCoords = {lat: -33.8887733, lng: 151.192203};
+  const marker = 'images/marker.svg';
 
   useEffect(() => {
     const loader = new Loader({
-      apiKey: 'AIzaSyDQrxgW1mgjVB0JT1K8sBXXv48rmI-ZOXY',
+      apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API,
       version: 'weekly',
     });
 
@@ -31,6 +32,7 @@ export default function Contact() {
         position: wilkinsonCoords,
         map,
         title: 'Wilkinson Building',
+        icon: marker,
       });
     });
   });
