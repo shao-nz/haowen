@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../styles/Contact.module.css'
 import Navbar from '/components/Navbar'
 import Footer from '/components/Footer'
@@ -9,6 +7,7 @@ import { Loader } from '@googlemaps/js-api-loader'
 
 export default function Contact() {
   const googlemap = useRef(null);
+  const wilkinsonCoords = {lat: -33.8887733, lng: 151.192203};
 
   useEffect(() => {
     const loader = new Loader({
@@ -21,11 +20,17 @@ export default function Contact() {
       const google = window.google;
       map = new google.maps.Map(googlemap.current, {
         mapId: '14003129647bca5c',
-        center: {lat: -33.8204125, lng: 151.1111421},
+        center: wilkinsonCoords,
         zoom: 16,
         fullscreenControl: false,
         mapTypeControl: false,
         streetViewControl: false,
+      });
+
+      new google.maps.Marker({
+        position: wilkinsonCoords,
+        map,
+        title: 'Wilkinson Building',
       });
     });
   });
@@ -57,7 +62,21 @@ export default function Contact() {
       </Head>
       <Navbar/>
       <main className={styles.main}>
-        <h3>Find me here:</h3>
+        <div className={styles.contactContainer}>
+        <h3>Contact Me</h3>
+        <br/>
+        <p>Phone: (+61) 405 826 000</p>
+        <p>Email: wenhao2001083@gmail.com</p>
+        <p>
+          <u><a href="https://www.linkedin.com/in/haowenarchitecture/">LinkedIn</a></u>
+        </p>
+        <p>
+          <u><a href="https://www.instagram.com/hao_portfolio/">Instagram</a></u>
+        </p>
+        <p>
+          <u><a href="https://issuu.com/haowenarchitecture">Issuu</a></u>
+        </p>
+        </div>
         <div className={styles.map} ref={googlemap}/>
       </main>
       <Footer />
