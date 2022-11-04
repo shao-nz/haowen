@@ -1,6 +1,8 @@
 .container {
     padding: 0 2rem;
     height: 100vh;
+    /* overflow-y: auto; */
+    /* scroll-snap-type: y mandatory; */
 }
 
 .main {
@@ -13,9 +15,10 @@
 }
 
 .portfolio {
-    width: 90%;
+    width: 85%;
     display: grid;
     grid-template-columns: 0.4fr 2fr;
+    column-gap: 0.5vw;
 }
 
 .scrollbar {
@@ -31,17 +34,113 @@
 }
 
 .scrollbar li {
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
-.imagecontainer {
+.slides {
     grid-area: 1/2;
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 3vmax;
 }
 
-.imagecontainer > img {
+.slides .scroll_snap_center > img {
     border: 1px black solid;
     width: 100%;
+    /* scroll-snap-align: center; */
+}.container {
+    padding: 0 2rem;
+    height: 100vh;
+}
+
+.main {
+    padding: 10vh 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.portfolio {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+    column-gap: 0.5vw;
+}
+
+.slides {
+    grid-area: 1/2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+    justify-content: flex-end;
+    gap: 3vmax;
+}
+
+.slides > img {
+    border: 1px black solid;
+    width: 70vw;;
+}
+
+.sideNav {
+    position: fixed;
+    width: 20vw;
+    z-index: 1;
+    left: 1vw;
+    top:14vh;
+    overflow-x: hidden;
+    font-size: 1vw;
+    font-family: Neutral Face;
+    color: black;
+    transform: translateX(0);
+    transition: 200ms;
+}
+
+.sideNav ul {
+    list-style-type: none;
+}
+
+.sideNav > ul > div > li {
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.show ul > li:last-child {
+    padding-bottom: 0.5vh;
+}
+
+.sideNav > ul > div > ul > li {
+    display: none;
+}
+
+.sideNav > ul > .show > ul > li {
+    display: list-item;
+    list-style-type: upper-roman;
+}
+
+.show {
+    display: list-item;
+}
+
+.show ul {
+    animation: showItem 200ms;
+}
+
+.show > li:first-child {
+    font-family: Neutral Face Bold;
+}
+
+@keyframes showItem {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0px);
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slides {margin-left: 0;}
 }
