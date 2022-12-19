@@ -92,10 +92,33 @@ export default function Portfolio() {
               ref={(e) => listRefs.current.push(e)}>
                 <li>PYRMONT BATHHOUSE</li>
                 <ul>
+                  <li>MASTER RENDER</li>
                   <li>PROJECT BRIEF</li>
-                  <li>SECTIONS</li>
-                  <li>PLANS</li>
+                  <li>MASTER SECTIONS</li>
+                  <li>MASTER PLANS</li>
                   <li>RENDERINGS</li>
+                </ul>
+              </div>
+
+              <div id='ripple'
+              ref={(e) => listRefs.current.push(e)}>
+                <li>THE RIPPLE</li>
+                <ul>
+                  <li>PROJECT BRIEF <br/> MASTER RENDER</li>
+                  <li>PARTI DIAGRAM <br/> MASTER PLAN</li>
+                  <li>PERSPECTIVE SECTION</li>
+                  <li>INTERIOR RENDERING <br/> DETAIL DIAGRAM</li>
+                </ul>
+              </div>
+
+              <div id='slipway'
+              ref={(e) => listRefs.current.push(e)}>
+                <li>THE SLIPWAY</li>
+                <ul>
+                  <li>MASTER RENDER</li>
+                  <li>PROJECT SITE</li>
+                  <li>PLAN <br/> RENDERING</li>
+                  <li>PHYSICAL MODELS</li>
                 </ul>
               </div>
 
@@ -103,32 +126,29 @@ export default function Portfolio() {
               ref={(e) => listRefs.current.push(e)}>
                 <li>THE WEAVING</li>
                 <ul>
-                  <li>PROJECT OVERVIEW</li>
-                  <li>ILLUSTRATIVE INTERPRETATION BY BRIAN YUNG</li>
+                  <li>MASTER RENDER</li>
                   <li>SITE ANALYSIS</li>
-                  <li>PLAN AND SECTIONS BY BRIAN YUNG AND AUNDRY CHAK</li>
-                  <li>RENDERING INPUTS</li>
+                  <li>DIAGRAMS BY BRIAN YUNG & AUDREY CHAK <br/> RENDERING</li>
                 </ul>
               </div>
 
-              <div id='haven'
+              <div id='ephemerality'
               ref={(e) => listRefs.current.push(e)}>
-                <li>HAVEN</li>
+                <li>EPHEMERALITY</li>
                 <ul>
-                  <li>PROJECT OVERVIEW</li>
-                  <li>ILLUSTRATION INTERPRETATION</li>
-                  <li>CONCEPT DEVELOPMENT</li>
-                  <li>SECTION</li>
-                  <li>HANDMADE MODEL</li>
-                  <li>AFTER RELOCATION</li>
+                  <li>MASTER RENDER</li>
+                  <li>PLAN</li>
+                  <li>INTERIOR RENDER</li>
                 </ul>
               </div>
 
-              <div id='hall'
+              <div id='courtyard'
               ref={(e) => listRefs.current.push(e)}>
-                <li>HALL OF CELEBRATION</li>
+                <li>COURTYARD HOUSE</li>
                 <ul>
-                  <li>TECHNICAL DRAWING</li>
+                  <li>MASTER RENDER</li>
+                  <li>DEMOLITION PLAN <br/> PROPOSAL PLAN</li>
+                  <li>PROPOSAL SECTION <br/> DESIGN CHOICES</li>
                 </ul>
               </div>
             </ul>
@@ -137,7 +157,7 @@ export default function Portfolio() {
 
           <div className={styles.slides}>
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website2.png' alt='resume' />
+                  src='/pages/website2.jpg' alt='resume' />
               <img ref={(element) => imageRefs.current.push(element)}
                   src='/pages/website3.jpg' alt='pyrmont-1' />
               <img ref={(element) => imageRefs.current.push(element)}
@@ -151,31 +171,49 @@ export default function Portfolio() {
               <img ref={(element) => imageRefs.current.push(element)}
                   src='/pages/website8.jpg' alt='pyrmont-6' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website9.jpg' alt='weaving-1' />
+                  src='/pages/website9.jpg' alt='ripple-1' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website10.jpg' alt='weaving-2' />
+                  src='/pages/website10.jpg' alt='ripple-2' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website11.jpg' alt='weaving-3' />
+                  src='/pages/website11.jpg' alt='ripple-3' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website12.jpg' alt='weaving-4' />
+                  src='/pages/website12.jpg' alt='ripple-4' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website13.jpg' alt='haven-1' />
+                  src='/pages/website13.jpg' alt='ripple-5' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website14.jpg' alt='haven-2' />
+                  src='/pages/website14.jpg' alt='slipway-1' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website15.jpg' alt='haven-3' />
+                  src='/pages/website15.jpg' alt='slipway-2' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website16.jpg' alt='haven-4' />
+                  src='/pages/website16.jpg' alt='slipway-3' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website17.jpg' alt='haven-5' /> 
+                  src='/pages/website17.jpg' alt='slipway-4' /> 
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website18.jpg' alt='haven-6' />
+                  src='/pages/website18.jpg' alt='slipway-5' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website19.jpg' alt='hall-1' />
+                  src='/pages/website19.jpg' alt='weaving-1' />
               <img ref={(element) => imageRefs.current.push(element)} 
-                  src='/pages/website20.jpg' alt='hall-2' />
+                  src='/pages/website20.jpg' alt='weaving-2' />
               <img ref={(element) => imageRefs.current.push(element)}
-                  src='/pages/website21.jpg' alt='hall-3' />
+                  src='/pages/website21.jpg' alt='weaving-3' />
+              <img ref={(element) => imageRefs.current.push(element)}
+                  src='/pages/website22.jpg' alt='weaving-4' />
+              <img ref={(element) => imageRefs.current.push(element)}
+                  src='/pages/website23.jpg' alt='ephemerality-1' />
+              <img ref={(element) => imageRefs.current.push(element)} 
+                  src='/pages/website24.jpg' alt='ephemerality-2' />
+              <img ref={(element) => imageRefs.current.push(element)}
+                  src='/pages/website25.jpg' alt='ephemerality-3' />
+              <img ref={(element) => imageRefs.current.push(element)}
+                  src='/pages/website26.jpg' alt='ephemerality-4' />
+              <img ref={(element) => imageRefs.current.push(element)}
+                  src='/pages/website27.jpg' alt='courtyard-1' />
+              <img ref={(element) => imageRefs.current.push(element)}
+                  src='/pages/website28.jpg' alt='courtyard-2' />
+              <img ref={(element) => imageRefs.current.push(element)} 
+                  src='/pages/website29.jpg' alt='courtyard-3' />
+              <img ref={(element) => imageRefs.current.push(element)} 
+                  src='/pages/website30.jpg' alt='courtyard-4' />
           </div>
         </div>
       </main>
