@@ -11,7 +11,7 @@ export default function Individual() {
       <Head>
         <title>Hao Wen</title>
         <meta name="description" content="Hao Wen's portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
         <link
           rel='preload'
           href='/fonts/NeutralFace/NeutralFace-Bold.otf'
