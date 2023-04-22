@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "github:googlemaps/js-api-loader",
+    "@vercel/analytics": "^1.0.0",
     "aws-sdk": "^2.1050.0",
     "mongodb": "^4.2.2",
     "mongoose": "^6.1.4",
