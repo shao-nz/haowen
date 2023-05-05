@@ -60,7 +60,7 @@ export default function Contact() {
             <h3 className="text-2xl font-bold">Contact Me</h3>
             <br />
             <p>Phone: (+61) 405 826 000</p>
-            <p>Email: wenhao2001083@gmail.com</p>
+            <p>Email: hao.wen.architecture@gmail.com</p>
             <p>
               <u>
                 <Link href="https://www.linkedin.com/in/haowenarchitecture/">
