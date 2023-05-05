@@ -1,0 +1,27 @@
+[
+  { "name": "resume", "descriptions": [""] },
+  {
+    "name": "pyrmont bathhouse",
+    "descriptions": [
+      "master render",
+      "project brief",
+      "master sections",
+      "master plans",
+      "renderings"
+    ]
+  },
+  {
+    "name": "the ripple",
+    "descriptions": [
+      "project brief\nmaster render",
+      "parti diagram\nmaster plan",
+      "perspective section",
+      "interior designing\ndetail diagram"
+    ]
+  },
+  {
+    "name": "the slipway",
+    "descriptions": ["master render", "plan\nrendering", "physical models"]
+  },
+  { "name": "additional works", "descriptions": ["the weaving", "ephemerality", "the courtyard house", "bila"] }
+]
