@@ -21,7 +21,7 @@
     "@googlemaps/js-api-loader": "github:googlemaps/js-api-loader",
     "aws-sdk": "^2.1050.0",
     "mongodb": "^4.2.2",
-    "mongoose": "^6.1.4",
+    "mongoose": "^6.4.6",
     "next": "12.3.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
