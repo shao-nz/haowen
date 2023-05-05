@@ -83,7 +83,7 @@ export default function Portfolio({ allPagesData }) {
 
   const renderSidebar = () => {
     return (
-      <div className=" lg:block fixed font-neutral-face lg:w-72 text-lg">
+      <div className="hidden lg:block fixed font-neutral-face lg:w-72 text-lg">
         <ul>
           {projectDescriptions.map((project) => {
             return (
