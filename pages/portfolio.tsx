@@ -124,16 +124,24 @@ export default function Portfolio({ allPagesData }) {
           const projPaths = project.projPaths;
           return projPaths.map((path, pathIndex) => {
             return (
-              <Image
-                ref={(e) => (imageRefs.current[imageCounter++] = e)}
-                className="border border-black w-3/4"
-                width={0}
-                height={0}
-                sizes="100vw"
-                src={path}
+              <ImageZoom
+                ref={(e) => {
+                  imageRefs.current[imageCounter++] = e;
+                }}
+                imgSrc={path}
                 alt={`${name}-${pathIndex + 1}`}
                 key={`${name}-${pathIndex + 1}`}
               />
+              // <Image
+              //   ref={(e) => (imageRefs.current[imageCounter++] = e)}
+              //   className="border border-black w-3/4"
+              //   width={0}
+              //   height={0}
+              //   sizes="100vw"
+              //   src={path}
+              //   alt={`${name}-${pathIndex + 1}`}
+              //   key={`${name}-${pathIndex + 1}`}
+              // />
             );
           });
         })}
