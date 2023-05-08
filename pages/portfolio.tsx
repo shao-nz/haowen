@@ -118,7 +118,7 @@ export default function Portfolio({ allPagesData }) {
   const renderProjects = () => {
     let imageCounter = 0;
     return (
-      <div className="flex flex-col gap-12 items-center lg:items-end">
+      <div className="flex flex-col gap-4 md:gap-8 lg:gap-12 items-center lg:items-end">
         {allPagesData.map((project) => {
           const name = project.proj;
           const projPaths = project.projPaths;
@@ -159,13 +159,11 @@ export default function Portfolio({ allPagesData }) {
       <div className="min-h-screen mx-8 flex flex-col">
         <Navbar />
         <main
-          className={`text-left flex flex-col justify-center items-center border-t border-black py-16 ${rokkitt.className}`}
+          className={`text-left flex flex-col justify-center items-center border-t border-black py-4 md:py-8 lg:py-16 ${rokkitt.className}`}
         >
-          <div className="mx-10 lg:mt-16">
+          <div className="lg:mx-10 lg:mt-16">
             {renderSidebar()}
-            <div className="flex flex-col gap-12 items-center lg:items-end">
-              {renderProjects()}
-            </div>
+            {renderProjects()}
           </div>
         </main>
         <Footer />

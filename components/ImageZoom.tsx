@@ -23,7 +23,7 @@ const ImageZoom = forwardRef<HTMLImageElement, any>(function ImageZoom(
   };
 
   return (
-    <div className="border border-black w-3/4">
+    <div className="border border-black lg:w-3/4">
       <figure
         className={
           showZoom
