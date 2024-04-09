@@ -13,15 +13,21 @@
   {
     "name": "the ripple",
     "descriptions": [
-      "project brief\nmaster render",
+      "project brief\nmain rendering",
       "parti diagram\nmaster plan",
       "perspective section",
-      "interior designing\ndetail diagram"
+      "interior designing\ndetail interpretation"
     ]
   },
   {
-    "name": "the slipway",
-    "descriptions": ["master render", "plan\nrendering", "physical models"]
-  },
-  { "name": "additional works", "descriptions": ["the weaving", "ephemerality", "the courtyard house", "bila"] }
+    "name": "buffalo house",
+    "descriptions": [
+      "exterior render\ncontext analysis",
+      "existing plan",
+      "design diagram\ndemolition plan",
+      "proposed ground",
+      "proposed level 1",
+      "proposed section"
+    ]
+  }
 ]
