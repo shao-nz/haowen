@@ -1,6 +1,16 @@
 [
   { "name": "resume", "descriptions": [""] },
   {
+    "name": "the tower & the strip",
+    "descriptions": [
+      "master render\nsite plan",
+      "ground gloor plan\nrenderings",
+      "typical floor plan\n1:200 model",
+      "facade elevation\nfacade section",
+      "1:20 models\ndetail unit plan"
+    ]
+  },
+  {
     "name": "pyrmont bathhouse",
     "descriptions": [
       "master render",
