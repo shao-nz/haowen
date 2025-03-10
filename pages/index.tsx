@@ -35,7 +35,7 @@ export default function Home() {
             <h1 className="text-3xl font-neutral-face-bold">
               I&#39;m Hao Wen.
             </h1>
-            <p className="font-neutral-face">THIRD YEAR ARCHITECTURE STUDENT</p>
+            <p className="font-neutral-face">FIFTH YEAR ARCHITECTURE STUDENT</p>
             <div className="list-none flex flex-col content-end">
               <ul>
                 <li className="text-lg underline text-right">
