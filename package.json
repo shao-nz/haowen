@@ -23,7 +23,7 @@
     "@types/google.maps": "^3.53.0",
     "aws-sdk": "^2.1050.0",
     "mongodb": "^4.2.2",
-    "mongoose": "^6.1.4",
+    "mongoose": "^6.13.6",
     "next": "^14.2.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
