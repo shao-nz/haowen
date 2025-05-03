@@ -1,5 +1,4 @@
 import { forwardRef, useState } from "react";
-import Image from "next/image";
 
 const ImageZoom = forwardRef<HTMLImageElement, any>(function ImageZoom(
   props: { imgSrc: string; alt: string },
@@ -25,26 +24,31 @@ const ImageZoom = forwardRef<HTMLImageElement, any>(function ImageZoom(
   return (
     <div className="border border-black lg:w-3/4">
       <figure
-        className={showZoom ? `bg-[length:200%] cursor-zoom-in` : undefined}
-        style={
-          showZoom
-            ? {
-                backgroundImage: `${bgImg}`,
-                backgroundPosition: `${mousePos.x}% ${mousePos.y}%`,
-              }
-            : {}
-        }
-        onMouseMove={(e) => getCursorPos(e)}
+        className={`${showZoom ? `cursor-zoom-in` : ""} overflow-hidden`}
+        onMouseMove={(e) => {
+          if (showZoom) {
+            getCursorPos(e);
+          }
+        }}
+        onClick={(e) => {
+          getCursorPos(e);
+          setShowZoom((currentShowZoom) => !currentShowZoom);
+        }}
       >
-        <Image
+        <img
           ref={ref}
           src={imgSrc}
           alt={alt}
-          className={`w-full block ${showZoom ? "opacity-0" : "opacity-1"}`}
-          width={0}
-          height={0}
-          sizes="100vw"
-          onClick={() => setShowZoom((showZoom) => !showZoom)}
+          className={`w-full block`}
+          style={{
+            transform: showZoom ? "scale(2)" : "scale(1)",
+            transformOrigin: showZoom
+              ? `${mousePos.x}% ${mousePos.y}%`
+              : "center center",
+            transition: "transform 0.1s ease",
+            height: "auto",
+          }}
+          loading="lazy"
         />
       </figure>
     </div>
