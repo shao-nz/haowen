@@ -32,11 +32,18 @@ export default function Portfolio({ allPagesData }) {
 
   useEffect(() => {
     setPageHeight(window.innerHeight);
-    window.addEventListener("resize", (e) => {
+
+    const handleResize = () => {
       setTimeout(() => {
         setPageHeight(window.innerHeight);
       }, 300);
-    });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const hideListItem = (section) => {
