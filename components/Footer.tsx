@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Rokkitt } from "@next/font/google";
+import { Rokkitt } from "next/font/google";
 
 const rokkitt = Rokkitt({
   weight: "400",

@@ -25,11 +25,7 @@ const ImageZoom = forwardRef<HTMLImageElement, any>(function ImageZoom(
   return (
     <div className="border border-black lg:w-3/4">
       <figure
-        className={
-          showZoom
-            ? `bg-[length:200%] cursor-zoom-in`
-            : undefined
-        }
+        className={showZoom ? `bg-[length:200%] cursor-zoom-in` : undefined}
         style={
           showZoom
             ? {

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ImageZoom from "../components/ImageZoom";
-import { Rokkitt } from "@next/font/google";
+import { Rokkitt } from "next/font/google";
 
 const rokkitt = Rokkitt({
   weight: "400",
