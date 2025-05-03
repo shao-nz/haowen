@@ -12,7 +12,7 @@ import { Rokkitt } from "next/font/google";
 import { getSortedPagesData } from "./api/pages";
 
 export async function getStaticProps() {
-  const allPagesData = getSortedPagesDa ta();
+  const allPagesData = getSortedPagesData();
   return {
     props: {
       allPagesData,
