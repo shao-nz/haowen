@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import ImageZoom from "../components/ImageZoom";
 import projectDescriptions from "../public/projectDescriptions.json";
 
-import { Rokkitt } from "@next/font/google";
+import { Rokkitt } from "next/font/google";
 
 import { getSortedPagesData } from "./api/pages";
 

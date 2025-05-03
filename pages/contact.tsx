@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 import { Loader } from "@googlemaps/js-api-loader";
-import { Rokkitt } from "@next/font/google";
+import { Rokkitt } from "next/font/google";
 
 const rokkitt = Rokkitt({
   weight: "400",
