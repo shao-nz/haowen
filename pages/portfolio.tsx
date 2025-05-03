@@ -74,12 +74,12 @@ export default function Portfolio({ allPagesData }) {
       }
     }, observerOptions);
 
-    for (const ref of imageRefs.current.reverse()) {
+    for (const ref of imageRefs.current) {
       ref && observer.observe(ref);
     }
 
     return () => observer.disconnect();
-  });
+  }, [pageHeight]);
 
   const renderSidebar = () => {
     return (
@@ -89,7 +89,9 @@ export default function Portfolio({ allPagesData }) {
             return (
               <div
                 id={project.name}
-                ref={(e) => listRefs.current.push(e)}
+                ref={(e) => {
+                  listRefs.current.push(e);
+                }}
                 key={project.name}
               >
                 <li>{project.name}</li>
@@ -132,16 +134,6 @@ export default function Portfolio({ allPagesData }) {
                 alt={`${name}-${pathIndex + 1}`}
                 key={`${name}-${pathIndex + 1}`}
               />
-              // <Image
-              //   ref={(e) => (imageRefs.current[imageCounter++] = e)}
-              //   className="border border-black w-3/4"
-              //   width={0}
-              //   height={0}
-              //   sizes="100vw"
-              //   src={path}
-              //   alt={`${name}-${pathIndex + 1}`}
-              //   key={`${name}-${pathIndex + 1}`}
-              // />
             );
           });
         })}
