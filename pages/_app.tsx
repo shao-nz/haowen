@@ -6,18 +6,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-        `}
-      </Script>
+        defer
+        src="http://analytics.eddyshao.com/script.js"
+        data-website-id="fd80e80e-bf20-4b4a-9ef9-9a7573ec8f62"
+      ></Script>
       <Component {...pageProps} />
     </>
   );
