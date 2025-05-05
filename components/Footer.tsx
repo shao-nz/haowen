@@ -13,8 +13,7 @@ export default function Footer() {
       <Link
         className="text-purple-700"
         href="https://www.linkedin.com/in/eddyshao/"
-        data-event-category="footer"
-        data-event-action="eddy"
+        data-event="Footer: Clicked Eddy Shao"
       >
         Eddy Shao
       </Link>

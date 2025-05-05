@@ -39,29 +39,20 @@ export default function Home() {
             <div className="list-none flex flex-col content-end">
               <ul>
                 <li className="text-lg underline text-right">
-                  <Link
-                    href="/portfolio"
-                    data-event-category="home"
-                    data-event-action="portfolio"
-                  >
+                  <Link href="/portfolio" data-event="Home: Clicked Portfolio">
                     PORTFOLIO
                   </Link>
                 </li>
                 <li className="text-lg underline text-right">
                   <Link
                     href="https://issuu.com/haowenarchitecture"
-                    data-event-category="home"
-                    data-event-action="individual"
+                    data-event="Home: Clicked Individual Works"
                   >
                     INDIVIDUAL WORKS
                   </Link>
                 </li>
                 <li className="text-lg underline text-right">
-                  <Link
-                    href="/contact"
-                    data-event-category="home"
-                    data-event-action="contact"
-                  >
+                  <Link href="/contact" data-event="Home: Clicked Contact">
                     CONTACT
                   </Link>
                 </li>

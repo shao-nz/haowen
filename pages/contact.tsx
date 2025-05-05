@@ -63,21 +63,32 @@ export default function Contact() {
             <p>Email: hao.wen.architecture@gmail.com</p>
             <p>
               <u>
-                <Link href="https://www.linkedin.com/in/haowenarchitecture/">
+                <Link
+                  href="https://www.linkedin.com/in/haowenarchitecture/"
+                  data-event="Contact: Clicked LinkedIn"
+                >
                   LinkedIn
                 </Link>
               </u>
             </p>
             <p>
               <u>
-                <Link href="https://www.instagram.com/hao_portfolio/">
+                <Link
+                  href="https://www.instagram.com/hao_portfolio/"
+                  data-event="Contact: Clicked Instagram"
+                >
                   Instagram
                 </Link>
               </u>
             </p>
             <p>
               <u>
-                <Link href="https://issuu.com/haowenarchitecture">Issuu</Link>
+                <Link
+                  href="https://issuu.com/haowenarchitecture"
+                  data-event="Contact: Clicked Issuu"
+                >
+                  Issuu
+                </Link>
               </u>
             </p>
           </div>
