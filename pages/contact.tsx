@@ -65,7 +65,7 @@ export default function Contact() {
               <u>
                 <Link
                   href="https://www.linkedin.com/in/haowenarchitecture/"
-                  data-event="Contact: Clicked LinkedIn"
+                  data-umami-event="Contact: Clicked LinkedIn"
                 >
                   LinkedIn
                 </Link>
@@ -75,7 +75,7 @@ export default function Contact() {
               <u>
                 <Link
                   href="https://www.instagram.com/hao_portfolio/"
-                  data-event="Contact: Clicked Instagram"
+                  data-umami-event="Contact: Clicked Instagram"
                 >
                   Instagram
                 </Link>
@@ -85,7 +85,7 @@ export default function Contact() {
               <u>
                 <Link
                   href="https://issuu.com/haowenarchitecture"
-                  data-event="Contact: Clicked Issuu"
+                  data-umami-event="Contact: Clicked Issuu"
                 >
                   Issuu
                 </Link>

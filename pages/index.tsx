@@ -39,20 +39,26 @@ export default function Home() {
             <div className="list-none flex flex-col content-end">
               <ul>
                 <li className="text-lg underline text-right">
-                  <Link href="/portfolio" data-event="Home: Clicked Portfolio">
+                  <Link
+                    href="/portfolio"
+                    data-umami-event="Home: Clicked Portfolio"
+                  >
                     PORTFOLIO
                   </Link>
                 </li>
                 <li className="text-lg underline text-right">
                   <Link
                     href="https://issuu.com/haowenarchitecture"
-                    data-event="Home: Clicked Individual Works"
+                    data-umami-event="Home: Clicked Individual Works"
                   >
                     INDIVIDUAL WORKS
                   </Link>
                 </li>
                 <li className="text-lg underline text-right">
-                  <Link href="/contact" data-event="Home: Clicked Contact">
+                  <Link
+                    href="/contact"
+                    data-umami-event="Home: Clicked Contact"
+                  >
                     CONTACT
                   </Link>
                 </li>
