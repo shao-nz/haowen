@@ -13,10 +13,17 @@ export default function NavBar() {
       <Link
         href="/"
         className={`text-xl md:text-3xl align-bottom ${rokkitt.className}`}
+        data-event-category="navbar"
+        data-event-action="home"
       >
         HW.
       </Link>
-      <Link href="https://www.instagram.com/hao_portfolio/" className="pb-1">
+      <Link
+        href="https://www.instagram.com/hao_portfolio/"
+        className="pb-1"
+        data-event-category="navbar"
+        data-event-action="instagram"
+      >
         <Image
           src="/instagram.png"
           alt="Instagram logo"
