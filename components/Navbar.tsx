@@ -13,7 +13,6 @@ export default function NavBar() {
       <Link
         href="/"
         className={`text-xl md:text-3xl align-bottom ${rokkitt.className}`}
-        data-umami-event="Navbar: Clicked Home"
       >
         HW.
       </Link>
