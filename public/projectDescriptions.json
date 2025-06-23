@@ -1,6 +1,16 @@
 [
   { "name": "resume", "descriptions": [""] },
   {
+    "name": "social housing in telopea",
+    "descriptions": [
+      "master render",
+      "project brief",
+      "master sections",
+      "master plans",
+      "renderings"
+    ]
+  },
+  {
     "name": "the tower & the strip",
     "descriptions": [
       "master render\nsite plan",
@@ -11,33 +21,12 @@
     ]
   },
   {
-    "name": "pyrmont bathhouse",
-    "descriptions": [
-      "master render",
-      "project brief",
-      "master sections",
-      "master plans",
-      "renderings"
-    ]
-  },
-  {
     "name": "the ripple",
     "descriptions": [
       "project brief\nmain rendering",
       "parti diagram\nmaster plan",
       "perspective section",
       "interior rendering\ndetail interpretation"
-    ]
-  },
-  {
-    "name": "buffalo house",
-    "descriptions": [
-      "exterior render\ncontext analysis",
-      "existing plan",
-      "design diagram\ndemolition plan",
-      "proposed ground",
-      "proposed level 1",
-      "proposed section"
     ]
   }
 ]
