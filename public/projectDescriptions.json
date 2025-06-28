@@ -3,30 +3,32 @@
   {
     "name": "social housing in telopea",
     "descriptions": [
-      "master render",
-      "project brief",
-      "master sections",
-      "master plans",
-      "renderings"
+      "1:1000 ground floor plan",
+      "1:1000 typical floor plan\n1:100 axo hand-drawing",
+      "1:100 unit plan\n1:100 physical model",
+      "1:500 short section",
+      "1:500 long section",
+      "construction process",
+      "1:2 material prototype\n1:100 physical model"
     ]
   },
   {
     "name": "the tower & the strip",
     "descriptions": [
-      "master render\nsite plan",
-      "ground gloor plan\nrenderings",
-      "typical floor plan\n1:200 model",
-      "facade elevation\nfacade section",
-      "1:20 models\ndetail unit plan"
+      "1:200 model",
+      "1:500 ground floor plan",
+      "1:500 typical floor plan\n1:500 section",
+      "1:40 facade elevation",
+      "1:80 unit plan"
     ]
   },
   {
     "name": "the ripple",
     "descriptions": [
       "project brief\nmain rendering",
-      "parti diagram\nmaster plan",
-      "perspective section",
-      "interior rendering\ndetail interpretation"
+      "1:400 ground floor plan",
+      "1:500 long section",
+      "1:20 detail section"
     ]
   }
 ]
